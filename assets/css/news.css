@@ -85,6 +85,7 @@ html {
         /* ĐIỀU HƯỚNG */
     .menu {
       /* font-weight: bolder; */
+      justify-content: center;
       width: 60%;
       height: 100%;
       position: absolute;
@@ -93,7 +94,7 @@ html {
       transform: translate(55%,-50%);  
     }
     .menu > li {
-      width: 25%;
+      width: calc(100% / 3);
       position: relative;
       list-style-type: none;
       /* width: 10rem; */
@@ -416,6 +417,7 @@ textarea{
   background-color: #136447;
 }
 
+
 .backtop {
   width: 50px;
   height: 50px;
@@ -425,20 +427,18 @@ textarea{
   position: fixed;
   bottom: 30px;
   right: 20px;
-  font-style: normal;
   display: none;
-  text-align: center;
   cursor: pointer;
+  font-style: normal;
+  text-align: center;
   outline: 2px solid white;
 }
 
-.fa-angle-up {
-line-height: 50px;
-}
-
 .backtop:hover {
-background-color: #16db65;
-
+    background-color: #16db65;
+}
+.fa-angle-up {
+  line-height: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -486,9 +486,6 @@ background-color: #16db65;
         background-color: rgba(40,84,48,0.8);
         backdrop-filter: blur(30px);
       }
-   header .menu{
-   display: none;
- }
   
  /* bao */
  .allnews{
@@ -523,4 +520,20 @@ background-color: #16db65;
  .intro-img{
    display: none;
  }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1024px){
+  header .menu{
+    width: 70%;
+    transform: translate(60%,-50%);;
+  }
+  .main-logo{
+    left: 2%;
+  }
+  .newsleft{
+    width: 65%;
+  }
+  .newsright{
+    width: 35%;
+  }
 }
