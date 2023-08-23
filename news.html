@@ -25,15 +25,6 @@
         <nav>
             <ul class="menu flex">
                 <li><a href="index.html">Trang chủ</a></li>
-                <li>
-                    <a href="#">Nông sản</a>
-                    <ul class="list">
-                        <li><a href="#nong">Nông nghiệp</a></li>
-                        <li><a href="#lam">Lâm nghiệp</a></li>
-                        <li><a href="#thuy">Thủy sản</a></li>
-                        <li><a href="#diem">Diêm nghiệp</a></li>
-                    </ul>
-                </li>
                 <li><a href="news.html">Tin tức</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
             </ul>
@@ -254,24 +245,21 @@
         <i class="fa-solid fa-angle-up"></i>
    </div>
 </footer>
-  <!-- JS -->
-  <script src="assets/js/index.js"></script>
-  <script>
-      // BACK TO TOP
-  var showBackTop = 300;
-  $(document).ready(function() {
-      $(window).scroll(function() {
-          if($(this).scrollTop() >= showBackTop){
-              $('.backtop').fadeIn();
-          } else {
-              $('.backtop').fadeOut();
-          }
-      });
-      $('.backtop').click(function(){
-          $('html, body').animate({scrollTop: 0 }, 800);
-      });
-  });
- </script>
-
-
+<!-- JS -->
+<!-- BACK-TO-TOP -->
+<script src="assets/js/index.js">
+    var showBackTop = 300;
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() >= showBackTop){
+                $('.backtop').fadeIn();
+            } else {
+                $('.backtop').fadeOut();
+            }
+        });
+        $('.backtop').click(function(){
+            $('html, body').animate({scrollTop: 0 }, 800);
+        });
+    });
+</script>
 </html>
